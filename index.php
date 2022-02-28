@@ -1,90 +1,153 @@
-<?php
-
-require("config/commandes.php");
-
-  $Produits=afficher();
-
-?>
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+<?php include 'inclure/head.php' ?>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.80.0">
-  <title>la piscine</title>
-</head>
 
 <body>
+    <?php include 'inclure/load.php' ?>
 
-  <header>
-    <div class="collapse bg-dark" id="navbarHeader">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-7 py-4">
-            <h4 class="text-white">About</h4>
-            <p class="text-muted">Add some information about the album below, the author, or any other background
-              context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off
-              to some social networking sites or contact information.</p>
-          </div>
-          <div class="col-sm-4 offset-md-1 py-4">
-            <h4 class="text-white">Sign in</h4>
-            <ul class="list-unstyled">
-              <li><a href="admin/index.php" class="text-white">Connexion</a></li>
-            </ul>
-          </div>
+    <?php include 'inclure/menu.php' ?>
+    <div class="cursor"></div>
+
+
+
+    <section>
+        <div class="wrapper ">
+
+            <h1>Pizza SIO, la pizzeria Rennaise qui sent bon l’italie !</h1>
+            <h2>Pizza SIO attache beaucoup d’attention à la qualité des produits qui vous sont proposés. </br> Nous
+                avons ainsi sélectionné pour vous le meilleur de l’Italie et de la France afin de vous servir des
+                recettes simples et savoureuses, burrata, focaccia et charcuterie française.</h2>
+            <p>Dans un cadre reposant, regarder le professionnalisme préparer et cuire ses pizzas, étonnamment
+                revisitées, au feu de bois. Parce que le travail artisanal est gage de qualité, la pizzéria Le Capri
+                répond à toutes vos attentes et sait innover mois après mois. A découvrir encore et encore. Ici, c’est
+                jamais fini…</p>
+
+            <video controls="controls" loop autoplay="true" src="image/pizza/pizza.mp4" width="100%">pizza de pizza
+                sio</video>
         </div>
-      </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
-            viewBox="0 0 24 24">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-            <circle cx="12" cy="13" r="4" /></svg>
-          <strong>MonoShop</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
-          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </div>
-  </header>
+    </section>
 
-  <main>
-    <div class="wrapper">
-      <div class="container">
-        <div class="">
-          <?php foreach($Produits as $produit): ?>
-          <div class="produit_conteneur">
-            <div class="produit_image_texte">
-              <title><?= $produit->nom ?></title>
-              <img src="<?= $produit->image ?>">
-              <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
-              <div class="bouton_produit">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
+    <section>
+        <div class="wrapper">
+
+            <h2>Le plaisir n'attend pas !</h2>
+            <p>Dégustez nos spécialités italiennes, pizzas, burgers maison, pastas, risottos et autres suggestions du
+                chef, accompagnées de nos vins et bières. Profitez de nos terrasses pour partager notre cuisine
+                italienne entièrement élaborée avec des produits frais. Nos 2 restaurants à Rennes sont situés à
+                proximité de Cesson-Sévigné et du Stade Rennais.</p>
+
+        </div>
+    </section>
+    <section id="page_menus">
+        <div class="wrapper">
+            <h2>le plats du jour</h2>
+            <article class="les_plats">
+
+                <div class="image_plats"><img src="image/menu/pesto.jpg"></div>
+                <div class="description_plats">
+                    <h2>Spaghettis pesto : 12€</h2>
+                    <p>spaghettonis, pesto, cipolla, pargimiano reggiano</p>
+                    <a href="page2.php" class="button">découvrir</a>
                 </div>
-                <small class="text-muted"><?= $produit->prix ?> €</small>
-              </div>
+            </article>
+    </section>
+
+    <section class="map">
+        <div class="wrapper ">
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                <script>
+                    (function () {
+                        var setting = {
+                            "height": 452,
+                            "width": 503,
+                            "zoom": 14,
+                            "queryString": "Rennes, France",
+                            "place_id": "ChIJhZDWpy_eDkgRMKvkNs2lDAQ",
+                            "satellite": false,
+                            "centerCoord": [48.115930362200984, -1.68845448538947],
+                            "cid": "0x40ca5cd36e4ab30",
+                            "lang": "fr",
+                            "cityUrl": "/france/rennes-924",
+                            "cityAnchorText": "Carte de Rennes, Bretagne, France",
+                            "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                            "embed_id": "476865"
+                        };
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=476865';
+                        s.async = true;
+                        s.onload = function (e) {
+                            window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                    })();
+                </script><a href="https://1map.com/fr/map-embed">1 Map</a>
             </div>
-          </div>
+
+            <div class="adresse">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="3">les horaires</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>12:00–15:00</td>
+                            <td>19:00–23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>12:00–15:00</td>
+                            <td>19:00–23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>12:00–15:00</td>
+                            <td>19:00–23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>12:00–15:00</td>
+                            <td>19:00–23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>12:00–15:00</td>
+                            <td>19:00–23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>12:00–15:00</td>
+                            <td>19:00–23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>19:00–22:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Les horaires peuvent être modifiés lors des jours fériés.</p>
+            </div>
         </div>
-        <?php endforeach; ?>
+
+    </section>
+    <section class="abv">
+        <p>hvhjgb,hg,bgkybgj</p>
+        <div class="toggle">
 
 
-      </div>
-    </div>
-    </div>
+        </div>
 
-  </main>
 
+
+    </section>
+    <?php include 'inclure/footer.php' ?>
 </body>
 
 </html>
+

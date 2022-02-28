@@ -1,0 +1,41 @@
+.wrapper{
+
+    text-align: center;margin:auto;max-width: 900px;
+
+    img{width: 300px;}
+}
+
+
+
+body{text-align: center;
+
+    /*menu du site */
+    header{display: flex;width: 100%;background-color:azure;justify-content: space-between;
+        ul{display: flex;margin: auto 0px auto auto;
+            li{ margin: 30px;list-style: none;
+                 & > a{color: black;text-decoration: none;text-transform: uppercase;}
+            }
+            .picto_admin{
+               a{display: block; color: transparent;background: url("image/icons.png") no-repeat center;background-size: contain;width: 30px;height: 30px;
+            
+                }
+            }
+        }
+        & > a { background: url("image/logo.png") no-repeat center;background-size: contain;width: 100px;height: auto;}
+    }
+    
+
+
+    /*géneral */
+    h1,h2{margin: auto;}
+
+    .boutons a{ width: 210px;display: block;
+        background-color: aquamarine;
+        margin: auto;
+        border: 1px black solid;border-radius: 50px;
+        &:hover{
+            color: black;background-color: black;
+        }
+    }
+}
+
