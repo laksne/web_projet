@@ -18,6 +18,8 @@ require("config/commandes.php");
   <link rel="stylesheet/less" type="text/css" href="styles.less" />
   <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
 </head>
+<?php include 'inclure/head.php' ?>
+<?php include 'inclure/menu.php' ?>
 
 <body>
 
@@ -57,12 +59,16 @@ require("config/commandes.php");
         </button>
       </div>
     </div>
+ 
+    -->
+
   </header>
-  -->
     <main>
       <div class="wrapper">
         <div class="container">
           <div class="">
+
+
             <?php foreach($Produits as $produit): ?>
             <div class="produit_conteneur">
               <div class="produit_image_texte">

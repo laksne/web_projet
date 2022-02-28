@@ -4,20 +4,15 @@
 
 
 <body>
-    <?php include 'inclure/load.php' ?>
 
     <?php include 'inclure/menu.php' ?>
-    <div class="cursor"></div>
-
 
 
     <section>
         <div class="wrapper ">
 
-            <h1>Pizza SIO, la pizzeria Rennaise qui sent bon l’italie !</h1>
-            <h2>Pizza SIO attache beaucoup d’attention à la qualité des produits qui vous sont proposés. </br> Nous
-                avons ainsi sélectionné pour vous le meilleur de l’Italie et de la France afin de vous servir des
-                recettes simples et savoureuses, burrata, focaccia et charcuterie française.</h2>
+            <h1>La piscine</h1>
+            <h2>Où nager, quel jour et à quelle heure à Rennes et dans la métropole ? Tous les horaires d'ouverture des piscines et de leurs bassins.</h2>
             <p>Dans un cadre reposant, regarder le professionnalisme préparer et cuire ses pizzas, étonnamment
                 revisitées, au feu de bois. Parce que le travail artisanal est gage de qualité, la pizzéria Le Capri
                 répond à toutes vos attentes et sait innover mois après mois. A découvrir encore et encore. Ici, c’est
