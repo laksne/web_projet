@@ -9,5 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&display=swap" rel="stylesheet">
     <title>Piscine Rennes</title> 
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>   
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>  
+    <!-- utiliser less sans utiliser internet -->
 </head>

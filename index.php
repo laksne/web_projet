@@ -12,11 +12,12 @@
         <div class="wrapper ">
 
             <h1>La piscine</h1>
-            <h2>Où nager, quel jour et à quelle heure à Rennes et dans la métropole ? Tous les horaires d'ouverture des piscines et de leurs bassins.</h2>
-            <p>Dans un cadre reposant, regarder le professionnalisme préparer et cuire ses pizzas, étonnamment
-                revisitées, au feu de bois. Parce que le travail artisanal est gage de qualité, la pizzéria Le Capri
-                répond à toutes vos attentes et sait innover mois après mois. A découvrir encore et encore. Ici, c’est
-                jamais fini…</p>
+            <h2>Piscines : infos pratiques, horaires et tarifs</h2>
+            <p>Envie d’aller nager et vous détendre à la piscine ? Avant de
+                 choisir votre plus beau maillot de bain, 
+                consultez les informations pratiques, les horaires d’ouvertures et les tarifs des
+                 piscines de Rennes et de sa métropole.
+            </p>
 
             <video controls="controls" loop autoplay="true" src="image/pizza/pizza.mp4" width="100%">pizza de pizza
                 sio</video>

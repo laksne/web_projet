@@ -16,7 +16,7 @@ require("config/commandes.php");
   <meta name="generator" content="antoine">
   <title>la piscine</title>
   <link rel="stylesheet/less" type="text/css" href="styles.less" />
-  <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
 </head>
 <?php include 'inclure/head.php' ?>
 <?php include 'inclure/menu.php' ?>
@@ -63,34 +63,32 @@ require("config/commandes.php");
     -->
 
   </header>
-    <main>
-      <div class="wrapper">
-        <div class="container">
-          <div class="">
-
-
-            <?php foreach($Produits as $produit): ?>
-            <div class="produit_conteneur">
-              <div class="produit_image_texte">
-                <title><?= $produit->nom ?></title>
-                <img src="<?= $produit->image ?>">
-                <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
-                <div class="bouton_produit">
-                  <div class="boutons">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Acheter</button>
-                  </div>
-                  <small class="text-muted"><?= $produit->prix ?> €</small>
+  <main>
+    <div class="wrapper">
+      <div class="container">
+        <div class="">
+          <!-- sert a afficher les produits -->
+          <?php foreach($Produits as $produit): ?>
+          <div class="produit_conteneur">
+            <div class="produit_image_texte">
+              <title><?= $produit->nom ?></title>
+              <img src="<?= $produit->image ?>">
+              <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
+              <div class="bouton_produit">
+                <div class="boutons">
+                  <!-- rajouter le boutons ajouter au panier ici voir si on dois le mettre dans le foreach-->
+                  <button type="button" class="button_produits">Acheter</button>
                 </div>
+                <small class="text-muted"><?= $produit->prix ?> €</small>
               </div>
             </div>
           </div>
           <?php endforeach; ?>
-
         </div>
       </div>
-      </div>
+    </div>
 
-    </main>
+  </main>
 
 </body>
 
