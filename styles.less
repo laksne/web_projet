@@ -1,4 +1,4 @@
-body{text-align: center;  margin: -1px;
+body{text-align: center;  margin: -1px;background: url("inclure/image/piscine1.jpg") no-repeat center;background-size: cover;
 
     /*menu du site */
     header{display: flex;width: 100%;background-color:azure;justify-content: space-between;
@@ -22,21 +22,19 @@ body{text-align: center;  margin: -1px;
         background-color: aquamarine;
         margin: auto;
         border: 1px black solid;border-radius: 50px;
-        &:hover{
-            color: black;background-color: black;
-        }
+        //effet du boutons
+        &:hover{ color: black;background-color: black;}
     }
     /*wrapper generale */
-    .wrapper{border: 1px solid red;padding: 10px;text-align: center;margin:auto;max-width: 900px;
+    .wrapper{padding: 10px;text-align: center;margin:auto;max-width: 900px;filter: opacity(98%);
+        -webkit-filter: opacity(98%);
+        -moz-filter: opacity(98%);background-color:aqua;
         img{width: 300px;}
     }
 
     .container{border: 1px solid red;padding: 10px;display: flex;justify-content: space-around;flex-wrap: wrap;
         .produit_conteneur{border: 1px solid green;padding: 10px;
         .produit_image_texte{border: 1px solid blue;padding: 10px;}
-    
-
-
     }
 
     }

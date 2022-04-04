@@ -1,4 +1,6 @@
 <?php
+require("config/panier.class.php");
+  $Panier = new panier;
 
 require("config/commandes.php");
 
@@ -76,11 +78,12 @@ require("config/commandes.php");
               <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
               <div class="bouton_produit">
                 <div class="boutons">
-                  <!-- rajouter le boutons ajouter au panier ici voir si on dois le mettre dans le foreach-->
-                  <button type="button" class="button_produits">Acheter</button>
-                </div>
                 <small class="text-muted"><?= $produit->prix ?> €</small>
+                  <a href="addpanier.php?id=<?= $produit()->id; ?>" class="add">Ajouter au panier</a>
+                </div>
+               
               </div>
+              
             </div>
           </div>
           <?php endforeach; ?>

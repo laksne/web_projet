@@ -8,7 +8,7 @@
                 <li><a href="catalogue.php">les tarifs</a></li>
                 <li><a href="#">panier</a></li>
                 <li><a href="#.php">Contact</a></li>
-                <li class="#"><a href="page6.php">admin</a></li>
+                <li class="#"><a href="login.php">admin</a></li>
             </ul>
         </nav>
 </header>
