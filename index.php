@@ -18,8 +18,9 @@
                 consultez les informations pratiques, les horaires d’ouvertures et les tarifs des
                  piscines de Rennes et de sa métropole.
             </p>
+            <iframe width="100%" height="720" src="https://www.youtube.com/embed/DW-0Ogpv4Mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <video controls="controls" loop autoplay="true" src="image/pizza/pizza.mp4" width="100%">pizza de pizza
+            <video controls="controls" loop autoplay="true" src="https://www.youtube.com/watch?v=--qP7i727U8&ab_channel=ProjectRelax%E2%80%A24k" width="100%">pizza de pizza
                 sio</video>
         </div>
     </section>
@@ -37,7 +38,7 @@
     </section>
     <section id="page_menus">
         <div class="wrapper">
-            <h2>le plats du jour</h2>
+            <h2></h2>
             <article class="les_plats">
 
                 <div class="image_plats"><img src="image/menu/pesto.jpg"></div>
@@ -132,16 +133,7 @@
         </div>
 
     </section>
-    <section class="abv">
-        <p>hvhjgb,hg,bgkybgj</p>
-        <div class="toggle">
-
-
-        </div>
-
-
-
-    </section>
+   
     <?php include 'inclure/footer.php' ?>
 </body>
 

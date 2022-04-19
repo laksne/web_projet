@@ -1,10 +1,33 @@
-body{text-align: center;  margin: -1px;background: url("inclure/image/piscine1.jpg") no-repeat center;background-size: cover;
+body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repeat center;background-size: cover;backdrop-filter: blur(2px);    margin: 0;
 
     /*menu du site */
-    header{display: flex;width: 100%;background-color:azure;justify-content: space-between;
+    header{display: flex;width: 100%;justify-content: space-between;
         ul{display: flex;margin: auto 0px auto auto;
             li{ margin: 30px;list-style: none;
-                 & > a{color: black;text-decoration: none;text-transform: uppercase;}
+                 & > a{color:white;text-decoration: none;text-transform: uppercase;font-family: 'Red Hat Display', sans-serif;font-weight: 900;
+                    position: relative;display: block;cursor: pointer;padding: 8px 0;color: #fff; text-decoration: none;
+                      
+                      &:hover{color: #fff;text-decoration: none;}
+                      
+                      &:before, a:after {content: '';position: absolute;width: 0%;height: 2px;bottom: -2px;background: #fff;}
+                      
+                      &:before {left: 0;}
+                      &:after {right: 0;background: #fff;transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);}
+                      
+                      &:hover:before {
+                        background: #fff;
+                        width: 100%;
+                        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+                      }
+                      
+                      &:hover:after {
+                        background: transparent;
+                        width: 100%;
+                        transition: 0s;
+                      }
+                
+                
+                }
             }
             .picto_admin{
                a{display: block; color: transparent;background: url("") no-repeat center;background-size: contain;width: 30px;height: 30px;}
@@ -16,21 +39,46 @@ body{text-align: center;  margin: -1px;background: url("inclure/image/piscine1.j
 
 
     /*géneral */
-    h1,h2{margin: auto;}
+    h1,h2{margin: auto;font-family: 'Red Hat Display', sans-serif;font-weight: 900;}
+    //titre de la page avec le logo
+    h1{font-size: 30px;line-height: 34px;margin: 180px 20px 20px 20px;position:relative;
+    
+        &:before{content: '';position: absolute;width: 200px;height: 200px;background: url("inclure/image/logo_noir.png");top:-200px;background-size: contain;
+            left: 50%;transform: translateX(-50%);
+        
+        }
+    }
 
+
+
+
+
+    p{font-family: 'Red Hat Display', sans-serif;font-weight: 400;}
     .boutons a{ width: 210px;display: block;
         background-color: aquamarine;
         margin: auto;
-        border: 1px black solid;border-radius: 50px;
+        border: 1px white solid;border-radius: 50px;
         //effet du boutons
-        &:hover{ color: black;background-color: black;}
+        &:hover{ color: white;background-color: white;}
     }
     /*wrapper generale */
-    .wrapper{padding: 10px;text-align: center;margin:auto;max-width: 900px;filter: opacity(98%);
-        -webkit-filter: opacity(98%);
-        -moz-filter: opacity(98%);background-color:aqua;
+    .wrapper{text-align: center;margin:auto;max-width: 900px;color: black;background-color:#fff;padding: 40px;box-shadow: 16px 20px 20px 6px rgb(255 255 255 / 85%);
+        
+        
+        //bordure 
+        border-left: 3px solid black;
+        border-right: 3px solid black;
         img{width: 300px;}
+
+
+        
     }
+    // effet seulement sur le premier wrapper 
+    section:nth-of-type(1){ .wrapper{   border-radius: 90px 90px 0 0; border-top: 3px solid black;} margin-top: 70px; }
+    section:nth-last-of-type(1){ .wrapper{   border-radius:  0 0 90px 90px;border-bottom: 3px solid black;} margin-bottom: 70px;}
+
+
+
 
     .container{border: 1px solid red;padding: 10px;display: flex;justify-content: space-around;flex-wrap: wrap;
         .produit_conteneur{border: 1px solid green;padding: 10px;

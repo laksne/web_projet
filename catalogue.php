@@ -25,8 +25,8 @@ require("config/commandes.php");
 
 <body>
 
-  <header>
-    <!--
+ <!-- <header>
+    
     <div class="collapse bg-dark" id="navbarHeader">
       <div class="container">
         <div class="row">
@@ -62,36 +62,51 @@ require("config/commandes.php");
       </div>
     </div>
  
-    -->
+  
 
-  </header>
-  <main>
-    <div class="wrapper">
-      <div class="container">
-        <div class="">
-          <!-- sert a afficher les produits -->
-          <?php foreach($Produits as $produit): ?>
-          <div class="produit_conteneur">
-            <div class="produit_image_texte">
-              <title><?= $produit->nom ?></title>
-              <img src="<?= $produit->image ?>">
-              <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
-              <div class="bouton_produit">
-                <div class="boutons">
-                <small class="text-muted"><?= $produit->prix ?> €</small>
-                  <a href="addpanier.php?id=<?= $produit()->id; ?>" class="add">Ajouter au panier</a>
+  </header>  -->
+  <section>
+      <div class="wrapper">
+              <h1>acheter votre titre</h1>
+      </div>
+
+    
+    </section>
+  
+    <section>
+      <div class="wrapper">
+        <div class="container">
+          <div class="">
+            <!-- sert a afficher les produits -->
+            <?php foreach($Produits as $produit): ?>
+            <div class="produit_conteneur">
+              <div class="produit_image_texte">
+                <title><?= $produit->nom ?></title>
+                <img src="<?= $produit->image ?>">
+                <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
+                <div class="bouton_produit">
+                  <div class="boutons">
+                  <small class="text-muted"><?= $produit->prix ?> €</small>
+                    <a href="addpanier.php?id=<?= $produit()->id; ?>" class="add">Ajouter au panier</a>
+                  </div>
+                
                 </div>
-               
+                
               </div>
-              
             </div>
+            <?php endforeach; ?>
           </div>
-          <?php endforeach; ?>
         </div>
       </div>
-    </div>
+    </section>
+    
+    <section>
+      <div class="wrapper">
+              <h1>teste</h1>
+      </div>
 
-  </main>
+    
+    </section>
 
 </body>
 

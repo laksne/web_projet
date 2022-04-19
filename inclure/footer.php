@@ -1,7 +1,4 @@
-<section class="pizza pizzaone"></section>
-<section class="pizza pizzatwo"></section>
-<section class="pizza pizzatree"></section>
-<section class="pizza pizzafour"></section>
+
 <footer class="footer-distributed">
     <div class="footer-left">
         <h3>PIZZA<span>  SIO</span></h3>
