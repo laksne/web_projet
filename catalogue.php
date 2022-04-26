@@ -68,9 +68,8 @@ require("config/commandes.php");
               <h1>acheter votre titre</h1>
       </div>
 
-    
-    </section>
-  
+  </section>
+
     <section>
       <div class="wrapper">
         <div class="container">
@@ -82,7 +81,7 @@ require("config/commandes.php");
               <h2>age<?= $produit->age ?></h2>
                 <title><?= $produit->nom ?></title>
                 <img src="<?= $produit->image ?>">
-                <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
+                <p class=""><?= substr($produit->description, 0, 200); ?></p>
                 <div class="bouton_produit">
                   <div class="boutons">
                    <small class="text-muted"><?= $produit->prix ?> €</small>

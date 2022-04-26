@@ -58,10 +58,10 @@
     {
     if(!empty($_POST['image']) AND !empty($_POST['nom']) AND !empty($_POST['prix']) AND !empty($_POST['desc']))
 	    {
-	    	$image = htmlspecialchars(strip_tags($_POST['image']));
-	    	$nom = htmlspecialchars(strip_tags($_POST['nom']));
-	    	$prix = htmlspecialchars(strip_tags($_POST['prix']));
-	    	$desc = htmlspecialchars(strip_tags($_POST['desc']));
+	    	$image = ($_POST['image']);
+	    	$nom = ($_POST['nom']);
+	    	$prix = ($_POST['prix']);
+	    	$desc = ($_POST['desc']);
           
           try 
           {
