@@ -13,6 +13,7 @@ class panier{
         if(!isset($_SESSION['panier'])){
             $_SESSION['panier'] = array();
         }
+        
     }
 }
 

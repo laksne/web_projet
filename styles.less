@@ -7,6 +7,10 @@ body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repe
                  & > a{color:white;text-decoration: none;text-transform: uppercase;font-family: 'Red Hat Display', sans-serif;font-weight: 900;
                     position: relative;display: block;cursor: pointer;padding: 8px 0;color: #fff; text-decoration: none;
                       
+
+
+
+                    /*tout les effets du hover sur le menu */
                       &:hover{color: #fff;text-decoration: none;}
                       
                       &:before, a:after {content: '';position: absolute;width: 0%;height: 2px;bottom: -2px;background: #fff;}
@@ -14,18 +18,9 @@ body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repe
                       &:before {left: 0;}
                       &:after {right: 0;background: #fff;transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);}
                       
-                      &:hover:before {
-                        background: #fff;
-                        width: 100%;
-                        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-                      }
+                      &:hover:before {background: #fff;width: 100%;transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);}
                       
-                      &:hover:after {
-                        background: transparent;
-                        width: 100%;
-                        transition: 0s;
-                      }
-                
+                      &:hover:after {background: transparent;width: 100%;transition: 0s;}
                 
                 }
             }
@@ -50,9 +45,7 @@ body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repe
     }
 
 
-
-
-
+    /*texte et corps du texte */
     p{font-family: 'Red Hat Display', sans-serif;font-weight: 400;}
     .boutons a{ width: 210px;display: block;
         background-color: aquamarine;
@@ -61,17 +54,16 @@ body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repe
         //effet du boutons
         &:hover{ color: white;background-color: white;}
     }
-    /*wrapper generale */
+
+
+    /* structure général section&wrapper */
     .wrapper{text-align: center;margin:auto;max-width: 900px;color: black;background-color:#fff;padding: 40px;box-shadow: 16px 20px 20px 6px rgb(255 255 255 / 85%);
         
         
         //bordure 
         border-left: 3px solid black;
         border-right: 3px solid black;
-        img{width: 300px;}
-
-
-        
+        img{width: 300px;}  
     }
     // effet seulement sur le premier wrapper 
     section:nth-of-type(1){ .wrapper{   border-radius: 90px 90px 0 0; border-top: 3px solid black;} margin-top: 70px; }
@@ -79,11 +71,28 @@ body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repe
 
 
 
+    /*produit */
+    .container{padding: 10px;border-radius: 30px;margin:10px;display: flex;justify-content: space-around;flex-wrap: wrap;
+        .produit_conteneur{border: 1px solid black;padding:10px;margin:20px;border-radius: 30px;}
+        a{color:black;text-decoration: none;text-transform: uppercase;font-family: 'Red Hat Display', sans-serif;font-weight: 900;
+            position: relative;display: block;cursor: pointer;padding: 8px 0;color: #fff; text-decoration: none;
+              
 
-    .container{border: 1px solid red;padding: 10px;display: flex;justify-content: space-around;flex-wrap: wrap;
-        .produit_conteneur{border: 1px solid green;padding: 10px;
-        .produit_image_texte{border: 1px solid blue;padding: 10px;}
+
+
+            /*tout les effets du hover sur le menu */
+              &:hover{color: #fff;text-decoration: none;}
+              
+              &:before, a:after {content: '';position: absolute;width: 0%;height: 2px;bottom: -2px;background: #fff;}
+              
+              &:before {left: 0;}
+              &:after {right: 0;background: #fff;transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);}
+              
+              &:hover:before {background: #fff;width: 100%;transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);}
+              
+              &:hover:after {background: transparent;width: 100%;transition: 0s;}
+        
+        }
     }
-ss
-    }
+    
 }

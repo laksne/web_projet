@@ -1,6 +1,4 @@
 <?php
-require("config/panier.class.php");
-  $Panier = new panier;
 
 require("config/commandes.php");
 
@@ -81,17 +79,17 @@ require("config/commandes.php");
             <?php foreach($Produits as $produit): ?>
             <div class="produit_conteneur">
               <div class="produit_image_texte">
+              <h2>age<?= $produit->age ?></h2>
                 <title><?= $produit->nom ?></title>
                 <img src="<?= $produit->image ?>">
                 <p class=""><?= substr($produit->descriptions, 0, 200); ?></p>
                 <div class="bouton_produit">
                   <div class="boutons">
-                  <small class="text-muted"><?= $produit->prix ?> €</small>
-                    <a href="addpanier.php?id=<?= $produit()->id; ?>" class="add">Ajouter au panier</a>
+                   <small class="text-muted"><?= $produit->prix ?> €</small>
+                  <a href="#">acheter</a>
                   </div>
                 
                 </div>
-                
               </div>
             </div>
             <?php endforeach; ?>
@@ -104,10 +102,7 @@ require("config/commandes.php");
       <div class="wrapper">
               <h1>teste</h1>
       </div>
-
-    
     </section>
-
 </body>
 
 </html>

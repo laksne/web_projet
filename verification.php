@@ -16,7 +16,9 @@ if(isset($_POST['username']) && isset($_POST['password']))
     $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['password']));
     
     if($username !== "" && $password !== "")
-    {
+    { 
+
+      // on regarde dans la table si les information son les bonnes et on les vérifie
         $requete = "SELECT count(*) FROM utilisateur where 
               nom_utilisateur = '".$username."' and mot_de_passe = '".$password."' ";
         $exec_requete = mysqli_query($db,$requete);
@@ -25,7 +27,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
         if($count!=0) // nom d'utilisateur et mot de passe correctes
         {
            $_SESSION['username'] = $username;
-           header('Location: principale.php');
+           header('Location: admin/index.php');
         }
         else
         {
