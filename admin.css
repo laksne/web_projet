@@ -1,0 +1,13 @@
+body{text-align: center;  ;background: url("inclure/image/piscine1.jpg") no-repeat center;background-size: cover;backdrop-filter: blur(2px); margin: 0;}
+
+.wrapper{text-align: center;margin:auto;max-width: 900px;color: black;background-color:#fff;padding: 40px;box-shadow: 16px 20px 20px 6px rgb(255 255 255 / 85%);
+        
+        
+    //bordure 
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+}
+
+body section:nth-of-type(1) .wrapper{   border-radius: 90px 90px 0 0; border-top: 3px solid black;} 
+body section:nth-last-of-type(1) .wrapper{   border-radius:  0 0 90px 90px;border-bottom: 3px solid black;} 

@@ -7,7 +7,7 @@
      $req = $access->prepare("INSERT INTO produits (image, nom, prix, description) VALUES ('$image', '$nom', $prix, '$desc')");
 
      $req->execute(array($image, $nom, $prix, $desc));
-
+    
      $req->closeCursor();
    }
 }
