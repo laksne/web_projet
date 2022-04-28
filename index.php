@@ -43,7 +43,7 @@
 
                 <div class="image_plats"><img src="image/menu/pesto.jpg"></div>
                 <div class="description_plats">
-                    <h2>Spaghettis pesto : 12€</h2>
+                    <h2>tarif sur la pages tarif</h2>
                     <p>spaghettonis, pesto, cipolla, pargimiano reggiano</p>
                     <a href="page2.php" class="button">découvrir</a>
                 </div>

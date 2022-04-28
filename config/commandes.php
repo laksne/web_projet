@@ -4,12 +4,8 @@
 {
    if(require("connexion.php"))
    {
-     $req = $access->prepare("INSERT INTO produits (id ,image, nom, prix, description) VALUES ('','$image', '$nom', $prix, '$desc')");
-
-     $req->execute(array($image, $nom, $prix, $desc));
-
-
-     $req->bind_param("?",$image,$nom,$prix,$desc);
+     $req = $access->prepare("INSERT INTO produits (image, nom, prix, description) VALUES ('$image', '$nom', $prix, '$desc')");
+     //$req->bind_param("?",$image,$nom,$prix,$desc);
      $req->closeCursor();
    }
 }
