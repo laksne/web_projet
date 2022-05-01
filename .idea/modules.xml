@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/PhpstormProjects/Panier brouillon/.idea/Panier_brouillon.iml" filepath="$USER_HOME$/PhpstormProjects/Panier brouillon/.idea/Panier_brouillon.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/web_projet.iml" filepath="$PROJECT_DIR$/.idea/web_projet.iml" />
     </modules>
   </component>
